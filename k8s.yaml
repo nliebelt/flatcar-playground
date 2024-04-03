@@ -1,0 +1,35 @@
+# module "salamander-prd" {
+#   source = "git::https://github.com/poseidon/typhoon//bare-metal/flatcar-linux/kubernetes?ref=v1.29.3"
+
+#   # bare-metal
+#   cluster_name            = "salamander-prd"
+#  # matchbox_http_endpoint  = "http://matchbox.example.com"
+# #  os_channel              = "flatcar-stable"
+# #  os_version              = "2345.3.1"
+
+#   # configuration
+#  # k8s_domain_name    = "node1.example.com"
+#  # ssh_authorized_key = "ssh-rsa AAAAB3Nz..."
+
+#   # machines
+#   controllers = [{
+#     name   = "node1"
+#     mac    = "52:54:00:a1:9c:ae"
+#     domain = "node1.example.com"
+#   }]
+#   workers = [
+#     {
+#       name   = "node2",
+#       mac    = "52:54:00:b2:2f:86"
+#       domain = "node2.example.com"
+#     },
+#     {
+#       name   = "node3",
+#       mac    = "52:54:00:c3:61:77"
+#       domain = "node3.example.com"
+#     }
+#   ]
+
+#   # set to http only if you cannot chainload to iPXE firmware with https support
+#   # download_protocol = "http"
+# }
